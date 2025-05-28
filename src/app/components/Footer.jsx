@@ -19,7 +19,7 @@ export const Footer = () => {
               transition={{ duration: 0.5 }}
               className="text-neutral-400"
             >
-              © {currentYear} Ganesh Dubey. All rights reserved.
+              © {currentYear}  Pandey. All rights reserved.
             </motion.p>
           </div>
 
@@ -30,14 +30,14 @@ export const Footer = () => {
             className="flex space-x-6"
           >
             <a
-              href="mailto:ganeshdubey767@gmail.com"
+              href="mailto:mahekpandey0303@gmail.com"
               className="text-neutral-400 hover:text-white transition-colors"
               aria-label="Email"
             >
               <Mail className="h-5 w-5" />
             </a>
             <a
-              href="https://github.com/ganeshdecoded"
+              href="https://github.com/Mahekpandey"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-400 hover:text-white transition-colors"
@@ -46,7 +46,7 @@ export const Footer = () => {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/ganesh-dubey-36a023253/"
+              href="https://www.linkedin.com/in/mahek-pandey-39243b258/\"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-400 hover:text-white transition-colors"

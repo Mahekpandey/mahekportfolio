@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Ganesh Dubey | Software Developer",
-  description: "Portfolio website of Ganesh Dubey - Software Developer showcasing projects, skills, and experience",
+  title: "Mahek Pandey | Software Developer",
+  description: "Portfolio website of Mahek Pandey - Software Developer showcasing projects, skills, and experience",
 };
 
 export default function RootLayout({ children }) {

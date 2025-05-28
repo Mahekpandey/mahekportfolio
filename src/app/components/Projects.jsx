@@ -21,7 +21,7 @@ export const Projects = () => {
       tech: ["Python", "Langflow", "AI", "ML", "AstraDB"],
       image: "/projects/social-analytics.webp",
       liveUrl: "https://www.youtube.com/watch?v=P4HWShPgY8A",
-      githubUrl: "https://github.com/ganeshdecoded/Social-Media-Performance-Analysis"
+       githubUrl: "https://github.com/ganeshdecoded/Social-Media-Performance-Analysis"
     },
     {
       title: "SoulBuddy",
@@ -29,7 +29,7 @@ export const Projects = () => {
       tech: ["Next.js", "Python", "Langflow", "Firebase", "AstraDB"],
       image: "/projects/soulbuddy.webp",
       liveUrl: "https://www.youtube.com/watch?v=rUX-Q9DhvLs",
-      githubUrl: "https://github.com/ganeshdecoded/AstroBuddy"
+       githubUrl: "https://github.com/ganeshdecoded/AstroBuddy"
     },
     {
       title: "AI Travel Planner",
@@ -37,8 +37,11 @@ export const Projects = () => {
       tech: ["Flutter", "Dart", "Google Cloud", "Google Maps API"],
       image: "/projects/travel-planner.webp",
       liveUrl: "https://drive.google.com/file/d/1sWnf1uZNM5AcEjouqL6Ky5C_1j90doQY/view?usp=sharing",
-      githubUrl: "https://github.com/ganeshdecoded/AI-Travel-Planner"
+      // githubUrl: "https://github.com/ganeshdecoded/AI-Travel-Planner"
     }
+    
+
+   
   ];
 
   return (

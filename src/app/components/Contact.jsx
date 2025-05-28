@@ -30,23 +30,23 @@ export const Contact = () => {
             <h3 className="text-xl font-semibold text-white mb-6">Contact Information</h3>
             <div className="space-y-4">
               <a
-                href="mailto:ganeshdubey767@gmail.com"
+                href="mailto:mahekpandey0303@gmail.com"
                 className="flex items-center justify-center space-x-3 text-neutral-400 hover:text-white transition-colors"
               >
                 <Mail className="h-5 w-5" />
-                <span>ganeshdubey767@gmail.com</span>
+                <span>mahekpandey0303@gmail.com</span>
               </a>
               <a
-                href="https://github.com/ganeshdecoded"
+                href="https://github.com/Mahekpandey"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center space-x-3 text-neutral-400 hover:text-white transition-colors"
               >
                 <Github className="h-5 w-5" />
-                <span>github.com/ganeshdecoded</span>
+                <span>github.com/Mahekpandey</span>
               </a>
               <a
-                href="https://www.linkedin.com/in/ganesh-dubey-36a023253/"
+                href="https://www.linkedin.com/in/mahek-pandey-39243b258/\"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center space-x-3 text-neutral-400 hover:text-white transition-colors"

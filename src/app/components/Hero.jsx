@@ -9,8 +9,8 @@ export const Hero = () => {
   return (
     <HeroGeometric
       badge="Software Developer"
-      title1="Ganesh"
-      title2="Dubey"
+      title1="Mahek"
+      title2="Pandey"
     />
   );
 }; 

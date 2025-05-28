@@ -74,8 +74,8 @@ function ElegantShape({
 
 function HeroGeometric({
     badge = "Software Developer",
-    title1 = "Ganesh",
-    title2 = "Dubey",
+    title1 = "Mahek",
+    title2 = "Pandey",
 }: {
     badge?: string;
     title1?: string;
@@ -155,7 +155,7 @@ function HeroGeometric({
                         className="flex items-center justify-center gap-6"
                     >
                         <motion.a
-                            href="https://github.com/ganeshdecoded"
+                            href="https://github.com/Mahekpandey"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group relative"
@@ -168,7 +168,7 @@ function HeroGeometric({
                             </div>
                         </motion.a>
                         <motion.a
-                            href="https://www.linkedin.com/in/ganesh-dubey-36a023253/"
+                            href="https://www.linkedin.com/in/mahek-pandey-39243b258/\"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group relative"
@@ -181,7 +181,7 @@ function HeroGeometric({
                             </div>
                         </motion.a>
                         <motion.a
-                            href="https://instagram.com/ganeshhdubey"
+                            href="https://instagram.com/mahekkpandey"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group relative"

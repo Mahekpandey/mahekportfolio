@@ -54,7 +54,7 @@ export const About = () => {
 
   const experiences = [
     {
-      title: "Technical Lead - Software Developer",
+      title: " Software Developer",
       company: "AlphaCodeAi",
       location: "Mumbai",
       date: "November 2024 - Present",
@@ -113,12 +113,11 @@ export const About = () => {
             <div className="flex flex-wrap justify-center gap-4 text-sm text-neutral-400">
               <span className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                ganeshdubey767@gmail.com
+                mahekpandey0303@gmail.com
               </span>
               <span className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                9529876039
-              </span>
+                7304252771              </span>
               <span className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
                 Thane, Maharashtra
@@ -143,7 +142,7 @@ export const About = () => {
               <div className="flex flex-wrap gap-4 text-sm text-neutral-400">
                 <span>Maharashtra, India</span>
                 <span>November 2022 - July 2026</span>
-                <span>CGPA: 7.0</span>
+                <span>CGPA: 8.75</span>
               </div>
             </div>
           </motion.div>
