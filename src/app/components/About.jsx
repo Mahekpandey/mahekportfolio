@@ -86,7 +86,7 @@ export const About = () => {
     {
       phase: "Production E-commerce",
       title: "Shop StoryMirror",
-      summary: "Led backend development for a production e-commerce platform handling 10,000+ monthly orders.",
+      summary: "Led backend development for a production e-commerce platform handling 1000+ monthly orders.",
       highlight: "Built MongoDB aggregation pipelines for real-time KPI analytics.",
     },
     {
