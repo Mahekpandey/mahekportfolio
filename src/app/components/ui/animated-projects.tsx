@@ -13,6 +13,7 @@ type Project = {
   image: string;
   liveUrl?: string;
   githubUrl?: string;
+  hideGithub?: boolean;
 };
 
 export const AnimatedProjects = ({
@@ -187,7 +188,7 @@ export const AnimatedProjects = ({
                   Video Demo
                 </a>
               )}
-              {projects[active].githubUrl && (
+              {projects[active].githubUrl && !projects[active].hideGithub && (
                 <a
                   href={projects[active].githubUrl}
                   target="_blank"

@@ -30,11 +30,11 @@ export const Contact = () => {
             <h3 className="text-xl font-semibold text-white mb-6">Contact Information</h3>
             <div className="space-y-4">
               <a
-                href="mailto:mahekpandey0303@gmail.com"
+                href="mailto:mahekpandey.work@gmail.com"
                 className="flex items-center justify-center space-x-3 text-neutral-400 hover:text-white transition-colors"
               >
                 <Mail className="h-5 w-5" />
-                <span>mahekpandey0303@gmail.com</span>
+                <span>mahekpandey.work@gmail.com</span>
               </a>
               <a
                 href="https://github.com/Mahekpandey"

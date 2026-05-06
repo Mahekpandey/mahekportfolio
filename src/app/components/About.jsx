@@ -54,10 +54,26 @@ export const About = () => {
 
   const experiences = [
     {
-      title: " Software Developer",
+      title: "Software Developer (PPO Intern)",
+      company: "StoryMirror",
+      location: "Mumbai, India",
+      date: "AUG 2025 - MAY 2026",
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
+      points: [
+        "HearMeOut AI Audiobook Generator: Developed end-to-end pipeline for book-to-audiobook conversion with chunking, async processing, voice customization, multilingual support, and audio stitching",
+        "GCP Migration & Infrastructure: Managed production deployment on Google Cloud Platform with CDN-backed asset delivery, CI/CD pipelines, and Linux-based monitoring",
+        "LLM Performance Optimization: Achieved 21x speedup via concurrent batching and developed intelligent caching layer reducing API costs by 60%",
+        "AI Marketing Creative Suite: Built automated generator for marketing assets using Gemini Vision APIs with 50+ dynamic templates",
+        "FixMyText.in (B2B SaaS): Engineered full-stack GenAI proofreading platform scaled to 20,000+ monthly users with white-labeled multi-tenant framework",
+        "Shop StoryMirror (Production): Led backend development handling 10,000+ monthly orders with advanced MongoDB aggregation pipelines for real-time analytics",
+        "Payment & Logistics: Integrated Razorpay/Paytm with automated reconciliation and real-time tracking across 40+ carriers via Shiprocket API"
+      ]
+    },
+    {
+      title: " Software Developer Intern",
       company: "AlphaCodeAi",
       location: "Mumbai",
-      date: "November 2024 - Present",
+      date: "November 2024 - March 2025",
       image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2070&auto=format&fit=crop",
       points: [
         "Transitioned from software development intern to full-time role and Tech Lead",
@@ -67,7 +83,7 @@ export const About = () => {
       ]
     },
     {
-      title: "Android App Developer",
+      title: "Android App Developer Intern",
       company: "Yug-E-Visuals",
       location: "Remote",
       date: "June 2024 - September 2024",
@@ -81,7 +97,7 @@ export const About = () => {
       ]
     },
     {
-      title: "Android App Developer",
+      title: "Android App Developer Intern",
       company: "Luxury In Taste",
       location: "Remote",
       date: "May 2024 - June 2024",
@@ -113,7 +129,7 @@ export const About = () => {
             <div className="flex flex-wrap justify-center gap-4 text-sm text-neutral-400">
               <span className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                mahekpandey0303@gmail.com
+                mahekpandey.work@gmail.com
               </span>
               <span className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
@@ -141,7 +157,7 @@ export const About = () => {
               <p className="text-neutral-400">Computer Engineering Bachelors</p>
               <div className="flex flex-wrap gap-4 text-sm text-neutral-400">
                 <span>Maharashtra, India</span>
-                <span>November 2022 - July 2026</span>
+                <span>November 2022 - May 2026</span>
                 <span>CGPA: 8.75</span>
               </div>
             </div>

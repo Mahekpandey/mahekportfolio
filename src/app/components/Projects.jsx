@@ -8,12 +8,21 @@ import { AnimatedProjects } from './ui/animated-projects';
 export const Projects = () => {
   const projects = [
     {
+      title: "DyslexiaDetection",
+      description: "Multi-modal AI system for early dyslexia detection using eye tracking, handwriting recognition, OCR, and NLP. Integrated eye movement analysis, reading assessment, story generation, and CNN-based handwriting classification with real-time metrics.",
+      tech: ["Python", "React", "Flask", "TensorFlow", "OpenCV", "MediaPipe", "WebSocket"],
+      image: "/projects/dyslexia.png",
+      liveUrl: "https://github.com/Mahekpandey/DyslexiaDetection",
+      githubUrl: "https://github.com/Mahekpandey/DyslexiaDetection"
+    },
+    {
       title: "Saksham Sevak",
       description: "SakshamSevak is a mobile application designed to support elderly individuals by enhancing their independence, safety, and connection to family and caregiver.",
       tech: ["Kotlin", "Firebase", "XML", "Sensors"],
       image: "/projects/saksham.png",
       liveUrl: "https://drive.google.com/file/d/1yZvuHJQx_PEx0bDCPwWPbFF4ZSR0qbtx/view",
-      githubUrl: "https://github.com/ganeshdecoded/Evolumin_Saksham_Sevak"
+      githubUrl: "https://github.com/ganeshdecoded/Evolumin_Saksham_Sevak",
+      hideGithub: true
     },
     {
       title: "Social Analytics Dashboard",
@@ -21,7 +30,8 @@ export const Projects = () => {
       tech: ["Python", "Langflow", "AI", "ML", "AstraDB"],
       image: "/projects/social-analytics.webp",
       liveUrl: "https://www.youtube.com/watch?v=P4HWShPgY8A",
-       githubUrl: "https://github.com/ganeshdecoded/Social-Media-Performance-Analysis"
+       githubUrl: "https://github.com/ganeshdecoded/Social-Media-Performance-Analysis",
+      hideGithub: true
     },
     {
       title: "SoulBuddy",
@@ -29,7 +39,8 @@ export const Projects = () => {
       tech: ["Next.js", "Python", "Langflow", "Firebase", "AstraDB"],
       image: "/projects/soulbuddy.webp",
       liveUrl: "https://www.youtube.com/watch?v=rUX-Q9DhvLs",
-       githubUrl: "https://github.com/ganeshdecoded/AstroBuddy"
+       githubUrl: "https://github.com/ganeshdecoded/AstroBuddy",
+      hideGithub: true
     },
     {
       title: "AI Travel Planner",

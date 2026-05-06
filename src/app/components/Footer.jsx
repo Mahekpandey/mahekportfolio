@@ -30,7 +30,7 @@ export const Footer = () => {
             className="flex space-x-6"
           >
             <a
-              href="mailto:mahekpandey0303@gmail.com"
+              href="mailto:mahekpandey.work@gmail.com"
               className="text-neutral-400 hover:text-white transition-colors"
               aria-label="Email"
             >
