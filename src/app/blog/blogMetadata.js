@@ -9,14 +9,14 @@ const blogPosts = {
     title: "Hi, I'm Mahek Pandey",
     description:
       "A personal introduction to what I am building at Eklavya, how product thinking changed my engineering mindset, and what this blog will be about.",
-    image: "/blog/mahek-pandey-intro.png",
+    image: "/blog/mahek-pandey-intro-og.jpg",
     publishedTime: "2026-07-30",
   },
   "ai-agent-problems": {
     title: "Most AI Agent Problems Aren't AI Problems",
     description:
       "Why reliable AI agents are built in the harness around the model: memory, retrieval, tools, retries, stop conditions, and workflows.",
-    image: "/blog/ai-agent-harness.png",
+    image: "/blog/ai-agent-harness-og.jpg",
     publishedTime: "2026-07-30",
   },
   "ai-agents-2025": {
