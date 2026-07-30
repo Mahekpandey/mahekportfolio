@@ -68,6 +68,8 @@ export function createBlogMetadata(slug) {
       images: [
         {
           url: imageUrl,
+          secureUrl: imageUrl,
+          type: post.image.endsWith(".jpg") ? "image/jpeg" : "image/png",
           width: 1200,
           height: 630,
           alt: post.title,
