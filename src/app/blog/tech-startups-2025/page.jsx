@@ -1,16 +1,11 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { GeometricBackground } from "../../components/ui/geometric-background";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import { useEffect } from "react";
+import { createBlogMetadata } from "../blogMetadata";
+
+export const metadata = createBlogMetadata("tech-startups-2025");
 
 export default function TechStartupsBlog() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-black">
       <GeometricBackground />

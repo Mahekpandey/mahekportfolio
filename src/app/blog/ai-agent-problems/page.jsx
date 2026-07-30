@@ -1,15 +1,11 @@
-"use client";
-
-import { useEffect } from "react";
 import { GeometricBackground } from "../../components/ui/geometric-background";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import { createBlogMetadata } from "../blogMetadata";
+
+export const metadata = createBlogMetadata("ai-agent-problems");
 
 export default function AIAgentProblemsBlog() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-black">
       <GeometricBackground />
