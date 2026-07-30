@@ -1,8 +1,13 @@
 const siteName = "Mahek Pandey";
 
-const siteUrl =
+const configuredSiteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://www.mahekcode.in");
+
+const siteUrl = configuredSiteUrl.replace(
+  /^https?:\/\/mahekcode\.in\/?$/,
+  "https://www.mahekcode.in"
+);
 
 const blogPosts = {
   "hi-im-mahek-pandey": {
@@ -45,6 +50,7 @@ const blogPosts = {
 export function createBlogMetadata(slug) {
   const post = blogPosts[slug];
   const url = `/blog/${slug}`;
+  const imageUrl = new URL(post.image, siteUrl).toString();
 
   return {
     title: `${post.title} | ${siteName}`,
@@ -61,7 +67,7 @@ export function createBlogMetadata(slug) {
       publishedTime: post.publishedTime,
       images: [
         {
-          url: post.image,
+          url: imageUrl,
           width: 1200,
           height: 630,
           alt: post.title,
@@ -72,7 +78,7 @@ export function createBlogMetadata(slug) {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
-      images: [post.image],
+      images: [imageUrl],
     },
   };
 }
