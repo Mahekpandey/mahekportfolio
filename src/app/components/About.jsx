@@ -13,13 +13,12 @@ const ExperienceCard = ({ title, company, location, date, points, image }) => (
     transition={{ duration: 0.3 }}
     className="bg-[#181818] hover:bg-[#282828] backdrop-blur-sm border border-white/5 rounded-lg p-5 w-full transition-all duration-300 group"
   >
-    <div className="aspect-square w-full mb-4 rounded-md overflow-hidden relative">
+    <div className="h-40 w-full mb-4 rounded-md overflow-hidden relative bg-white p-6 flex items-center justify-center">
       <img
         src={image}
         alt={company}
-        className="w-full h-full object-cover transition-all duration-300 group-hover:scale-105"
+        className="max-w-full max-h-full object-contain transition-all duration-300 group-hover:scale-105"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50" />
     </div>
     <h3 className="text-xl font-bold text-white mb-1 truncate">{title}</h3>
     <div className="flex items-center gap-2 text-neutral-400 text-sm mb-2">
@@ -105,11 +104,22 @@ export const About = () => {
 
   const experiences = [
     {
+      title: "AI Builder",
+      company: "Eklavya.io",
+      location: "Mumbai, India",
+      date: "May 2026 - Present",
+      image: "/blog/eklavya.png",
+      points: [
+        "Building AI-first product workflows and agentic systems",
+        "Designing practical AI tools around context, retrieval, automation, and product reliability"
+      ]
+    },
+    {
       title: "Software Developer (PPO Intern)",
       company: "StoryMirror",
       location: "Mumbai, India",
-      date: "AUG 2025 - MAY 2026",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
+      date: "Aug 2025 - May 2026",
+      image: "/blog/storymirror.png",
       points: [
         "HearMeOut AI Audiobook Generator: Developed end-to-end pipeline for book-to-audiobook conversion with chunking, async processing, voice customization, multilingual support, and audio stitching",
         "GCP Migration & Infrastructure: Managed production deployment on Google Cloud Platform with CDN-backed asset delivery, CI/CD pipelines, and Linux-based monitoring",
@@ -118,47 +128,6 @@ export const About = () => {
         "FixMyText.in (B2B SaaS): Engineered full-stack GenAI proofreading platform scaled to 20,000+ monthly users with white-labeled multi-tenant framework",
         "Shop StoryMirror (Production): Led backend development handling 10,000+ monthly orders with advanced MongoDB aggregation pipelines for real-time analytics",
         "Payment & Logistics: Integrated Razorpay/Paytm with automated reconciliation and real-time tracking across 40+ carriers via Shiprocket API"
-      ]
-    },
-    {
-      title: " Software Developer Intern",
-      company: "AlphaCodeAi",
-      location: "Mumbai",
-      date: "November 2024 - March 2025",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2070&auto=format&fit=crop",
-      points: [
-        "Transitioned from software development intern to full-time role and Tech Lead",
-        "Built websites, mobile apps, a shop app, and a blockchain application",
-        "Integrated APIs, collaborated with ML teams, and connected apps to Firebase",
-        "Managed app deployments, ensuring readiness for Play Store launches"
-      ]
-    },
-    {
-      title: "Android App Developer Intern",
-      company: "Yug-E-Visuals",
-      location: "Remote",
-      date: "June 2024 - September 2024",
-      image: "https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?q=80&w=2070&auto=format&fit=crop",
-      points: [
-        "Project: Xplore Muni",
-        "Successfully integrated various APIs",
-        "Collaborated with ML Team to integrate ML scripts",
-        "Connected app to Firebase for real-time database management",
-        "Managed deployment process for Play Store launch"
-      ]
-    },
-    {
-      title: "Android App Developer Intern",
-      company: "Luxury In Taste",
-      location: "Remote",
-      date: "May 2024 - June 2024",
-      image: "https://images.unsplash.com/photo-1601972599720-36938d4ecd31?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      points: [
-        "Technologies Used: Kotlin, MVVM, REST API, Jetpack Compose, Firebase",
-        "Enhanced User Engagement through intuitive UI/UX design",
-        "Integrated Firebase for cloud messaging and Google authentication",
-        "Implemented ML scripts and various APIs",
-        "Developed features using MVVM architecture and Kotlin coroutines"
       ]
     }
   ];
@@ -232,7 +201,7 @@ export const About = () => {
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 text-xs text-neutral-300">
-                <span className="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20">AUG 2025 - PRESENT</span>
+                <span className="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20">AUG 2025 - MAY 2026</span>
                 <span className="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20">Mumbai, India</span>
                 <span className="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300">PPO</span>
               </div>

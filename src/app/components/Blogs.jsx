@@ -6,6 +6,24 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: "Hi, I'm Mahek Pandey",
+    date: "July 30, 2026",
+    readTime: "4 min read",
+    description: "A personal introduction to what I am building at Eklavya, how product thinking changed my engineering mindset, and what this blog will be about.",
+    image: "/blog/mahek-pandey-intro.png",
+    imageFit: "contain",
+    link: "/blog/hi-im-mahek-pandey"
+  },
+  {
+    title: "Most AI Agent Problems Aren't AI Problems",
+    date: "July 30, 2026",
+    readTime: "5 min read",
+    description: "Why reliable AI agents are built in the harness around the model: memory, retrieval, tools, retries, stop conditions, and workflows.",
+    image: "/blog/ai-agent-harness.png",
+    imageFit: "contain",
+    link: "/blog/ai-agent-problems"
+  },
+  {
     title: "The Rise of AI Agents: Revolutionizing Work in 2025",
     date: "January 15, 2025",
     readTime: "12 min read",
@@ -41,7 +59,7 @@ export const Blogs = () => {
           <p className="text-xl text-neutral-400">Exploring the frontiers of technology and innovation</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch">
           {blogPosts.map((post, index) => (
             <motion.div
               key={post.title}
@@ -49,24 +67,26 @@ export const Blogs = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="group"
+              className="group h-full"
             >
-              <Link href={post.link} className="block">
-                <div className="bg-neutral-900/50 rounded-2xl overflow-hidden border border-neutral-800 backdrop-blur-sm hover:border-neutral-700 transition-colors">
-                  <div className="aspect-video overflow-hidden">
+              <Link href={post.link} className="block h-full">
+                <div className="h-full bg-neutral-900/50 rounded-2xl overflow-hidden border border-neutral-800 backdrop-blur-sm hover:border-neutral-700 transition-colors flex flex-col">
+                  <div className={`h-60 overflow-hidden flex items-center justify-center ${post.imageFit === "contain" ? "bg-white p-3" : ""}`}>
                     <img
                       src={post.image}
                       alt={post.title}
-                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                      className={`w-full h-full transform group-hover:scale-105 transition-transform duration-300 ${
+                        post.imageFit === "contain" ? "object-contain" : "object-cover"
+                      }`}
                     />
                   </div>
-                  <div className="p-6">
+                  <div className="p-6 flex flex-1 flex-col">
                     <div className="flex items-center gap-2 text-sm text-neutral-400 mb-4">
                       <span>{post.date}</span>
                       <span>•</span>
                       <span>{post.readTime}</span>
                     </div>
-                    <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                    <h3 className="text-xl font-semibold text-white mb-2 min-h-[3.5rem] line-clamp-2 group-hover:text-blue-400 transition-colors">
                       {post.title}
                     </h3>
                     <p className="text-neutral-400 line-clamp-2">
