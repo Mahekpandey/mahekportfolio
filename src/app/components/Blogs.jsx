@@ -6,6 +6,24 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: "What Gradient Descent Taught Me About Life",
+    date: "August 7, 2026",
+    readTime: "8 min read",
+    description: "A personal reflection on gradient descent, feedback, learning rates, failure, and how small corrections shape growth over time.",
+    image: "/blog/what-gradient-descent-taught-me-about-life.png",
+    imageFit: "contain",
+    link: "/blog/what-gradient-descent-taught-me-about-life"
+  },
+  {
+    title: "You Can Plan Your Next Year. Life Might Have Other Plans.",
+    date: "August 7, 2026",
+    readTime: "6 min read",
+    description: "A reflection on engineering, first internships, changing plans, and why progress rarely happens exactly the way we imagined.",
+    image: "/blog/you-can-plan-your-next-year.png",
+    imageFit: "contain",
+    link: "/blog/you-can-plan-your-next-year"
+  },
+  {
     title: "Hi, I'm Mahek Pandey",
     date: "July 30, 2026",
     readTime: "4 min read",

@@ -10,6 +10,20 @@ const siteUrl = configuredSiteUrl.replace(
 );
 
 const blogPosts = {
+  "what-gradient-descent-taught-me-about-life": {
+    title: "What Gradient Descent Taught Me About Life",
+    description:
+      "A personal reflection on gradient descent, feedback, learning rates, failure, and how small corrections shape growth over time.",
+    image: "/blog/what-gradient-descent-taught-me-about-life.png",
+    publishedTime: "2026-08-07",
+  },
+  "you-can-plan-your-next-year": {
+    title: "You Can Plan Your Next Year. Life Might Have Other Plans.",
+    description:
+      "A reflection on engineering, first internships, changing plans, and why progress rarely happens exactly the way we imagined.",
+    image: "/blog/you-can-plan-your-next-year.png",
+    publishedTime: "2026-08-07",
+  },
   "hi-im-mahek-pandey": {
     title: "Hi, I'm Mahek Pandey",
     description:
