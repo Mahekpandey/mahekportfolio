@@ -42,21 +42,20 @@ export default function CoachingCentresSellFearBlog() {
             <p>Naturally, the next question was:</p>
             <p><strong className="text-white">“Which coaching class should I join?”</strong></p>
             <p>Like many parents, mine weren&apos;t simply looking for tuition.</p>
-            <p>They were looking for a <strong className="text-white">better career, better opportunities, and some certainty about the future.</strong></p>
+            <p>They wanted a <strong className="text-white">better career, better opportunities, and some certainty about the future.</strong></p>
             <p>And that&apos;s where I noticed something that has stayed with me.</p>
-            <p>A lot of coaching centres don&apos;t begin by telling parents how capable their child is.</p>
-            <p>They begin by showing them <strong className="text-white">where their child is falling behind.</strong></p>
+            <p>Many coaching centres don&apos;t start by telling parents how capable their child is.</p>
+            <p>They start by showing them <strong className="text-white">where their child is falling behind.</strong></p>
             <p>Your child scored 90?</p>
             <p>Someone else scored 95.</p>
             <p>Your child is good at mathematics?</p>
             <p>But can they solve this advanced problem?</p>
             <p>Your child is already performing well?</p>
             <p><strong className="text-white">Imagine how much better they could perform with us.</strong></p>
-            <p>And slowly, something changes.</p>
+            <p>Slowly, something changes.</p>
             <p>A student who was doing well starts feeling like they aren&apos;t doing enough.</p>
             <p>A parent who was satisfied starts worrying.</p>
-            <p><strong className="text-white">A gap has been created.</strong></p>
-            <p>And once that gap feels big enough, the solution becomes easy to sell:</p>
+            <p><strong className="text-white">First, they create the gap. Then they sell themselves as the solution.</strong></p>
 
             <div className="border-l-4 border-blue-500 pl-6 my-8">
               <blockquote className="text-xl text-neutral-300 italic">
@@ -66,7 +65,7 @@ export default function CoachingCentresSellFearBlog() {
 
             <h2 className="text-2xl font-bold text-white mt-8">The Algorithm of Fear</h2>
             
-            <p>If I had to reduce this entire process to an algorithm, it might look like this:</p>
+            <p>If I had to reduce this process to an algorithm, it might look like this:</p>
             
             <pre className="bg-neutral-900 p-4 rounded-lg overflow-x-auto text-sm text-neutral-300 font-mono">
 {`Student Performance
@@ -77,7 +76,7 @@ Compare With a Benchmark
         ↓
 Highlight the Gap
         ↓
-Amplify the Gap
+Make the Gap Feel Bigger
         ↓
 Create Urgency
         ↓
@@ -86,7 +85,7 @@ Offer the Solution
 Enroll`}
             </pre>
 
-            <p>The interesting part is that this reminds me of something completely different:</p>
+            <p>And interestingly, this reminds me of something completely different:</p>
             <p><strong className="text-white">training an LLM.</strong></p>
             <p>An LLM starts with a current state.</p>
             <p>It makes a prediction.</p>
@@ -110,17 +109,16 @@ Repeat`}
             </pre>
 
             <p>The analogy isn&apos;t perfect. Students aren&apos;t neural networks, and learning isn&apos;t gradient descent.</p>
-            <p>But the psychological parallel is fascinating.</p>
+            <p>But there is an important difference.</p>
             <p>A healthy learning system uses <strong className="text-white">error as information</strong>.</p>
-            <p>A manipulative system can turn <strong className="text-white">error into fear</strong>.</p>
-            <p>That&apos;s the distinction that matters.</p>
+            <p>A manipulative system can use <strong className="text-white">error as fear</strong>.</p>
+            <p>That&apos;s where things go wrong.</p>
 
             <h2 className="text-2xl font-bold text-white mt-8">The Problem Isn&apos;t Comparison</h2>
 
             <p>Comparison itself isn&apos;t bad.</p>
-            <p>In fact, comparison can be extremely useful.</p>
-            <p>Knowing where you currently stand can help you identify what to improve.</p>
-            <p>A student might genuinely benefit from knowing:</p>
+            <p>Knowing where you stand can help you understand what you need to improve.</p>
+            <p>For example:</p>
 
             <div className="border-l-4 border-blue-500 pl-6 my-8">
               <blockquote className="text-xl text-neutral-300 italic">
@@ -128,9 +126,9 @@ Repeat`}
               </blockquote>
             </div>
 
-            <p>That&apos;s useful information.</p>
-            <p>The problem begins when <strong className="text-white">comparison becomes the product.</strong></p>
-            <p>When the question changes from:</p>
+            <p>That&apos;s useful.</p>
+            <p>But the problem starts when <strong className="text-white">comparison becomes the product.</strong></p>
+            <p>Instead of asking:</p>
 
             <div className="border-l-4 border-blue-500 pl-6 my-8">
               <blockquote className="text-xl text-neutral-300 italic">
@@ -138,7 +136,7 @@ Repeat`}
               </blockquote>
             </div>
 
-            <p>to:</p>
+            <p>the question becomes:</p>
 
             <div className="border-l-4 border-blue-500 pl-6 my-8">
               <blockquote className="text-xl text-neutral-300 italic">
@@ -146,19 +144,19 @@ Repeat`}
               </blockquote>
             </div>
 
-            <p>Education can slowly become an <strong className="text-white">anxiety market</strong>.</p>
-            <p>The benchmark keeps moving.</p>
-            <p>There is always another student who scored higher.</p>
-            <p>Another exam.</p>
+            <p>And there is always someone ahead.</p>
+            <p>Another student with higher marks.</p>
             <p>Another rank.</p>
+            <p>Another exam.</p>
             <p>Another chapter you haven&apos;t mastered.</p>
             <p>Another test you haven&apos;t taken.</p>
-            <p>And therefore, there is always another reason to feel behind.</p>
+            <p>So there is always another reason to feel behind.</p>
+            <p><strong className="text-white">That&apos;s how education can turn into an anxiety market.</strong></p>
 
-            <h2 className="text-2xl font-bold text-white mt-8">Technology Can Make This Even More Powerful</h2>
+            <h2 className="text-2xl font-bold text-white mt-8">Technology Can Make This Even Worse</h2>
 
-            <p>This is where educational technology needs to be particularly careful.</p>
-            <p>An AI learning platform can know far more about a student&apos;s weaknesses than a traditional classroom ever could.</p>
+            <p>This is where educational technology needs to be careful.</p>
+            <p>An AI learning platform can know much more about a student&apos;s weaknesses than a traditional classroom.</p>
             <p>It can know:</p>
             <ul className="list-disc pl-6 space-y-3">
               <li>which concepts they repeatedly get wrong,</li>
@@ -168,20 +166,19 @@ Repeat`}
               <li>how their performance changes over time.</li>
             </ul>
 
-            <p>Technically, that&apos;s incredibly powerful.</p>
-            <p>But there is a dangerous version of it.</p>
-            <p>Imagine opening an app and seeing:</p>
+            <p>That&apos;s incredibly powerful.</p>
+            <p>But imagine using that information like this:</p>
             <p><strong className="text-white">“You are weak in 17 concepts.”</strong></p>
             <p>Then:</p>
             <p><strong className="text-white">“You&apos;re behind 72% of students.”</strong></p>
-            <p>Then a notification:</p>
+            <p>Then:</p>
             <p><strong className="text-white">“You haven&apos;t completed today&apos;s target.”</strong></p>
-            <p>Then another:</p>
+            <p>Then:</p>
             <p><strong className="text-white">“Your peers are studying more than you.”</strong></p>
 
-            <p>Every individual feature might look like good product design.</p>
+            <p>Each feature might look harmless on its own.</p>
             <p>Together, they can create something very different:</p>
-            <p><strong className="text-white">a machine that continuously reminds a student that they are not enough.</strong></p>
+            <p><strong className="text-white">a system that constantly reminds students that they are not enough.</strong></p>
             <p>That&apos;s not adaptive learning.</p>
             <p><strong className="text-white">That&apos;s anxiety with analytics.</strong></p>
 
@@ -192,7 +189,7 @@ Repeat`}
             
             <div className="border-l-4 border-blue-500 pl-6 my-8">
               <blockquote className="text-xl text-neutral-300 italic">
-                <strong className="text-white">“You are weak in renal physiology. Let&apos;s identify exactly which concept is causing the problem and practise it.”</strong>
+                <strong className="text-white">“You are weak in renal physiology. Let&apos;s find the exact concept you&apos;re struggling with and practise it.”</strong>
               </blockquote>
             </div>
 
@@ -204,21 +201,22 @@ Repeat`}
               </blockquote>
             </div>
 
-            <p>The first creates a <strong className="text-white">path forward</strong>.</p>
+            <p>The first gives you a <strong className="text-white">path forward</strong>.</p>
             <p>The second creates a <strong className="text-white">status threat</strong>.</p>
             <p>One tells you what to do next.</p>
-            <p>The other tells you how inadequate you are.</p>
-            <p>That&apos;s a small difference in wording, but potentially a huge difference in psychology.</p>
+            <p>The other tells you how far behind you are.</p>
+            <p>That&apos;s a small difference in wording, but a huge difference in psychology.</p>
 
             <h2 className="text-2xl font-bold text-white mt-8">The Learning System I Want to Build</h2>
 
             <p>This is something I&apos;ve started thinking about deeply while building educational technology.</p>
-            <p>If we&apos;re going to use AI to understand a student&apos;s weaknesses, the goal shouldn&apos;t be to make the student feel inadequate.</p>
-            <p>It should be:</p>
+            <p>If we&apos;re going to use AI to understand a student&apos;s weaknesses, we shouldn&apos;t use those weaknesses to make the student feel smaller.</p>
+            <p>We should use them to help the student improve.</p>
+            <p>The system should be:</p>
             <p><strong className="text-white">Understand → Diagnose → Explain → Practise → Improve.</strong></p>
             <p>Not:</p>
             <p><strong className="text-white">Compare → Frighten → Pressure → Sell.</strong></p>
-            <p>A weakness should be treated as <strong className="text-white">information</strong>, not an identity.</p>
+            <p>A weakness should be treated as <strong className="text-white">information, not an identity.</strong></p>
             <p>A wrong answer shouldn&apos;t mean:</p>
             
             <div className="border-l-4 border-blue-500 pl-6 my-8">
@@ -231,13 +229,11 @@ Repeat`}
 
             <div className="border-l-4 border-blue-500 pl-6 my-8">
               <blockquote className="text-xl text-neutral-300 italic">
-                “The system has found something I can work on.”
+                “The system found something I need to work on.”
               </blockquote>
             </div>
 
-            <p>That distinction is incredibly important.</p>
-            <p>Because the best teacher doesn&apos;t constantly remind you that you&apos;re behind.</p>
-            <p>The best teacher helps you understand <strong className="text-white">why</strong> you&apos;re behind, <strong className="text-white">what</strong> you&apos;re missing, and <strong className="text-white">what to do next.</strong></p>
+            <p>That&apos;s what good adaptive learning should do.</p>
 
             <h2 className="text-2xl font-bold text-white mt-8">From Loss to Learning</h2>
 
@@ -247,21 +243,21 @@ Repeat`}
             <p>A higher loss doesn&apos;t mean the model is stupid.</p>
             <p>It means:</p>
             <p><strong className="text-white">there is more to learn.</strong></p>
-            <p>I think education should work the same way.</p>
-            <p>A student getting a question wrong shouldn&apos;t be made to feel smaller.</p>
+            <p>Education should work the same way.</p>
+            <p>A student getting a question wrong shouldn&apos;t become a reason to make them feel smaller.</p>
             <p>The mistake should simply tell the system:</p>
             <p><strong className="text-white">“Here is where we need to teach differently.”</strong></p>
-            <p>That&apos;s the kind of adaptive learning I believe technology should enable.</p>
+            <p>That&apos;s the kind of AI-powered education I want to build.</p>
             <p>Not systems that manufacture insecurity.</p>
             <p>Not endless rankings.</p>
             <p>Not artificial urgency.</p>
             <p>Not selling students the fear of being left behind.</p>
-            <p>But systems that can look at a student&apos;s current state and calmly say:</p>
+            <p>But systems that can simply say:</p>
             
             <p><strong className="text-white">“Here is where you are.”</strong></p>
             <p><strong className="text-white">“Here is what you don&apos;t understand yet.”</strong></p>
             <p><strong className="text-white">“Here is why.”</strong></p>
-            <p><strong className="text-white">“And here is the next step.”</strong></p>
+            <p><strong className="text-white">“And here is what you should do next.”</strong></p>
 
             <p>Because ultimately, the best learning system shouldn&apos;t convince a student that they are behind.</p>
             <p><strong className="text-white">It should give them the clarity and confidence to move forward.</strong></p>
