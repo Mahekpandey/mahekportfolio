@@ -66,6 +66,13 @@ const blogPosts = {
     image: "/blog/coaching-centres-sell-fear.png",
     publishedTime: "2026-08-13",
   },
+  "ai-changed-engineering": {
+    title: "AI Was Supposed to Replace Engineers. Instead, It Changed What Engineering Means.",
+    description:
+      "A reflection on how AI is shifting software engineering from writing code to understanding problems and architecture.",
+    image: "/blog/ai-changed-engineering.png",
+    publishedTime: "2026-08-13",
+  },
 };
 
 export function createBlogMetadata(slug) {

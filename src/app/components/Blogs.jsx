@@ -6,6 +6,16 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: "AI Was Supposed to Replace Engineers. Instead, It Changed What Engineering Means.",
+    date: "August 13, 2026",
+    readTime: "3 min read",
+    description: "A reflection on how AI is shifting software engineering from writing code to understanding problems and architecture.",
+    image: "/blog/ai-changed-engineering.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/ai-changed-engineering"
+  },
+  {
     title: "How Coaching Centres Sell Fear — And Why It Reminds Me of Training an LLM",
     date: "August 13, 2026",
     readTime: "5 min read",
