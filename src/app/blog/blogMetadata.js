@@ -59,6 +59,13 @@ const blogPosts = {
     image: "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=80&w=2070&auto=format&fit=crop",
     publishedTime: "2025-02-20",
   },
+  "coaching-centres-sell-fear": {
+    title: "How Coaching Centres Sell Fear — And Why It Reminds Me of Training an LLM",
+    description:
+      "A reflection on the education system, how coaching classes use comparison and fear, and why adaptive learning should use errors as information, not insults.",
+    image: "/blog/coaching-centres-sell-fear.png",
+    publishedTime: "2026-08-13",
+  },
 };
 
 export function createBlogMetadata(slug) {

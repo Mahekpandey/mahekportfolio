@@ -6,12 +6,23 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: "How Coaching Centres Sell Fear — And Why It Reminds Me of Training an LLM",
+    date: "August 13, 2026",
+    readTime: "5 min read",
+    description: "A reflection on the education system, how coaching classes use comparison and fear, and why adaptive learning should use errors as information, not insults.",
+    image: "/blog/coaching-centres-sell-fear.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/coaching-centres-sell-fear"
+  },
+  {
     title: "What Gradient Descent Taught Me About Life",
     date: "August 7, 2026",
     readTime: "8 min read",
     description: "A personal reflection on gradient descent, feedback, learning rates, failure, and how small corrections shape growth over time.",
     image: "/blog/what-gradient-descent-taught-me-about-life.png",
     imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
     link: "/blog/what-gradient-descent-taught-me-about-life"
   },
   {
@@ -21,6 +32,7 @@ const blogPosts = [
     description: "A reflection on engineering, first internships, changing plans, and why progress rarely happens exactly the way we imagined.",
     image: "/blog/you-can-plan-your-next-year.png",
     imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
     link: "/blog/you-can-plan-your-next-year"
   },
   {
@@ -89,7 +101,7 @@ export const Blogs = () => {
             >
               <Link href={post.link} className="block h-full">
                 <div className="h-full bg-neutral-900/50 rounded-2xl overflow-hidden border border-neutral-800 backdrop-blur-sm hover:border-neutral-700 transition-colors flex flex-col">
-                  <div className={`h-60 overflow-hidden flex items-center justify-center ${post.imageFit === "contain" ? "bg-white p-3" : ""}`}>
+                  <div className={`h-60 overflow-hidden flex items-center justify-center ${post.imageFit === "contain" ? post.imageFrameClass || "bg-white p-3" : ""}`}>
                     <img
                       src={post.image}
                       alt={post.title}
