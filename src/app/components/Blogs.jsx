@@ -6,6 +6,16 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: "What I'm Learning: The Octalysis Framework",
+    date: "August 19, 2026",
+    readTime: "3 min read",
+    description: "Notes from Chapter 3 of Actionable Gamification on the 8 Core Drives, motivation, product design, learning, and habits.",
+    image: "/blog/octalysis-framework.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/the-most-powerful-motivation-isnt-money"
+  },
+  {
     title: "AI Was Supposed to Replace Engineers. Instead, It Changed What Engineering Means.",
     date: "August 13, 2026",
     readTime: "3 min read",

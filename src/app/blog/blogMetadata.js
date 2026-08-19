@@ -10,6 +10,13 @@ const siteUrl = configuredSiteUrl.replace(
 );
 
 const blogPosts = {
+  "the-most-powerful-motivation-isnt-money": {
+    title: "What I'm Learning: The Octalysis Framework",
+    description:
+      "Notes from Chapter 3 of Actionable Gamification on the 8 Core Drives, motivation, product design, learning, and habits.",
+    image: "/blog/octalysis-framework.png",
+    publishedTime: "2026-08-19",
+  },
   "what-gradient-descent-taught-me-about-life": {
     title: "What Gradient Descent Taught Me About Life",
     description:
