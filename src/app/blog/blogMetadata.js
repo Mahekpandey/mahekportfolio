@@ -10,6 +10,13 @@ const siteUrl = configuredSiteUrl.replace(
 );
 
 const blogPosts = {
+  "as-ai-advances-being-human-matters-more-than-ever": {
+    title: "As AI Advances, Being Human Matters More Than Ever",
+    description:
+      "A reflection on AI, human values, empathy, integrity, curiosity, critical thinking, and why being human matters more as technology becomes more capable.",
+    image: "/blog/as-ai-advances-being-human-matters-more-than-ever.png",
+    publishedTime: "2026-08-21",
+  },
   "the-most-powerful-motivation-isnt-money": {
     title: "What I'm Learning: The Octalysis Framework",
     description:

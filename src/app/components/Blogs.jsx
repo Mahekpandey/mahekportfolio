@@ -6,6 +6,16 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: "As AI Advances, Being Human Matters More Than Ever",
+    date: "August 21, 2026",
+    readTime: "3 min read",
+    description: "A reflection on AI, human values, empathy, integrity, curiosity, critical thinking, and why being human matters more as technology becomes more capable.",
+    image: "/blog/as-ai-advances-being-human-matters-more-than-ever.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/as-ai-advances-being-human-matters-more-than-ever"
+  },
+  {
     title: "What I'm Learning: The Octalysis Framework",
     date: "August 19, 2026",
     readTime: "3 min read",
