@@ -6,6 +6,26 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: 'What "Actionable Gamification" Is Teaching Me About Product Design',
+    date: "August 27, 2026",
+    readTime: "3 min read",
+    description: "A reflection on Actionable Gamification, human motivation, learning habits, progress, achievement, and product design for Medical.Eklavya.",
+    image: "/blog/actionable-gami.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/what-actionable-gamification-is-teaching-me-about-product-design"
+  },
+  {
+    title: "I Didn't Build an AI Tutor. I Built a Learning System.",
+    date: "August 27, 2026",
+    readTime: "4 min read",
+    description: "A reflection on Medical.Eklavya, adaptive learning logic, deterministic engineering, spaced repetition, state machines, and knowing where not to use AI.",
+    image: "/blog/i-didnt-build-an-ai-tutor-i-built-a-learning-system.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/i-didnt-build-an-ai-tutor-i-built-a-learning-system"
+  },
+  {
     title: "As AI Advances, Being Human Matters More Than Ever",
     date: "August 21, 2026",
     readTime: "3 min read",

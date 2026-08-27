@@ -10,6 +10,20 @@ const siteUrl = configuredSiteUrl.replace(
 );
 
 const blogPosts = {
+  "what-actionable-gamification-is-teaching-me-about-product-design": {
+    title: 'What "Actionable Gamification" Is Teaching Me About Product Design',
+    description:
+      "A reflection on Actionable Gamification, human motivation, learning habits, progress, achievement, and product design for Medical.Eklavya.",
+    image: "/blog/actionable-gami.png",
+    publishedTime: "2026-08-27",
+  },
+  "i-didnt-build-an-ai-tutor-i-built-a-learning-system": {
+    title: "I Didn't Build an AI Tutor. I Built a Learning System.",
+    description:
+      "A reflection on Medical.Eklavya, adaptive learning logic, deterministic engineering, spaced repetition, state machines, and knowing where not to use AI.",
+    image: "/blog/i-didnt-build-an-ai-tutor-i-built-a-learning-system.png",
+    publishedTime: "2026-08-27",
+  },
   "as-ai-advances-being-human-matters-more-than-ever": {
     title: "As AI Advances, Being Human Matters More Than Ever",
     description:
