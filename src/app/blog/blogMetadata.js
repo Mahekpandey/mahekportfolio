@@ -10,6 +10,20 @@ const siteUrl = configuredSiteUrl.replace(
 );
 
 const blogPosts = {
+  "education-shouldnt-be-a-treasure-hunt": {
+    title: "Education Shouldn't Be a Treasure Hunt",
+    description:
+      "A reflection on Bihar Eklavya, textbook discovery, access to education, and why educational technology should remove unnecessary struggle for students.",
+    image: "/blog/education-shouldnt-be-a-treasure-hunt.png",
+    publishedTime: "2026-09-07",
+  },
+  "we-want-everything-faster-but-are-we-ready-for-the-speed": {
+    title: "We Want Everything Faster. But Are We Ready for the Speed?",
+    description:
+      "A reflection on system design, speed, scalability, technical debt, and building software that can survive the pace at which we build it.",
+    image: "/blog/we-want-everything-faster-but-are-we-ready-for-the-speed.png",
+    publishedTime: "2026-09-07",
+  },
   "what-actionable-gamification-is-teaching-me-about-product-design": {
     title: 'What "Actionable Gamification" Is Teaching Me About Product Design',
     description:

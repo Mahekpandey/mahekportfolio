@@ -6,13 +6,31 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: "Education Shouldn't Be a Treasure Hunt",
+    date: "September 7, 2026",
+    readTime: "2 min read",
+    description: "A reflection on Bihar Eklavya, textbook discovery, access to education, and why educational technology should remove unnecessary struggle for students.",
+    image: "/blog/education-shouldnt-be-a-treasure-hunt.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/education-shouldnt-be-a-treasure-hunt"
+  },
+  {
+    title: "We Want Everything Faster. But Are We Ready for the Speed?",
+    date: "September 7, 2026",
+    readTime: "2 min read",
+    description: "A reflection on system design, speed, scalability, technical debt, and building software that can survive the pace at which we build it.",
+    image: "/blog/we-want-everything-faster-but-are-we-ready-for-the-speed.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/we-want-everything-faster-but-are-we-ready-for-the-speed"
+  },
+  {
     title: 'What "Actionable Gamification" Is Teaching Me About Product Design',
     date: "August 27, 2026",
     readTime: "3 min read",
     description: "A reflection on Actionable Gamification, human motivation, learning habits, progress, achievement, and product design for Medical.Eklavya.",
     image: "/blog/actionable-gami.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
     link: "/blog/what-actionable-gamification-is-teaching-me-about-product-design"
   },
   {

@@ -32,11 +32,11 @@ export default function ActionableGamificationProductDesignBlog() {
             </div>
           </div>
 
-          <div className="aspect-video w-full mb-12 rounded-2xl overflow-hidden bg-neutral-950 p-3">
+          <div className="aspect-[3/2] w-full mb-12 rounded-2xl overflow-hidden bg-neutral-950">
             <img
               src="/blog/actionable-gami.png"
               alt="Actionable Gamification and product design"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover"
             />
           </div>
 
