@@ -10,6 +10,13 @@ const siteUrl = configuredSiteUrl.replace(
 );
 
 const blogPosts = {
+  "are-we-educating-students-or-training-them-for-a-job": {
+    title: "Are We Educating Students, or Training Them for a Job?",
+    description:
+      "A reflection on whether education gives students the freedom to explore, question, choose, and think beyond job training.",
+    image: "/blog/are-we-educating-students-or-training-them-for-a-job.png",
+    publishedTime: "2026-09-11",
+  },
   "the-day-i-lost-my-favourite-swimming-goggles": {
     title: "The Day I Lost My Favourite Swimming Goggles",
     description:

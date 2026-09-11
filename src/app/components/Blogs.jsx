@@ -6,6 +6,16 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: "Are We Educating Students, or Training Them for a Job?",
+    date: "September 11, 2026",
+    readTime: "3 min read",
+    description: "A reflection on whether education gives students the freedom to explore, question, choose, and think beyond job training.",
+    image: "/blog/are-we-educating-students-or-training-them-for-a-job.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/are-we-educating-students-or-training-them-for-a-job"
+  },
+  {
     title: "The Day I Lost My Favourite Swimming Goggles",
     date: "September 11, 2026",
     readTime: "3 min read",
