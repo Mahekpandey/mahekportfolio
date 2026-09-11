@@ -10,6 +10,13 @@ const siteUrl = configuredSiteUrl.replace(
 );
 
 const blogPosts = {
+  "the-day-i-lost-my-favourite-swimming-goggles": {
+    title: "The Day I Lost My Favourite Swimming Goggles",
+    description:
+      "A reflection on saving things for the perfect day, losing time while trying to preserve it, and remembering to let life be lived.",
+    image: "/blog/the-day-i-lost-my-favourite-swimming-goggles.png",
+    publishedTime: "2026-09-11",
+  },
   "education-shouldnt-be-a-treasure-hunt": {
     title: "Education Shouldn't Be a Treasure Hunt",
     description:

@@ -6,6 +6,16 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: "The Day I Lost My Favourite Swimming Goggles",
+    date: "September 11, 2026",
+    readTime: "3 min read",
+    description: "A reflection on saving things for the perfect day, losing time while trying to preserve it, and remembering to let life be lived.",
+    image: "/blog/the-day-i-lost-my-favourite-swimming-goggles.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/the-day-i-lost-my-favourite-swimming-goggles"
+  },
+  {
     title: "Education Shouldn't Be a Treasure Hunt",
     date: "September 7, 2026",
     readTime: "2 min read",
@@ -174,7 +184,7 @@ export const Blogs = () => {
                       src={post.image}
                       alt={post.title}
                       className={`w-full h-full transform group-hover:scale-105 transition-transform duration-300 ${
-                        post.imageFit === "contain" ? "object-contain" : "object-cover"
+                        post.imageFit === "contain" ? "object-contain object-center" : "object-cover object-center"
                       }`}
                     />
                   </div>
