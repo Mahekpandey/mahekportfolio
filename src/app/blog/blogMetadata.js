@@ -10,6 +10,20 @@ const siteUrl = configuredSiteUrl.replace(
 );
 
 const blogPosts = {
+  "why-do-developers-love-starting-more-than-finishing": {
+    title: "Why Do Developers Love Starting More Than Finishing?",
+    description:
+      "A reflection on the excitement of new projects, the persistence of building software, and the responsibility of finishing what we start.",
+    image: "/blog/cat-tired.png",
+    publishedTime: "2026-09-17",
+  },
+  "is-it-laziness-or-is-my-mind-just-too-full": {
+    title: "Is It Laziness, or Is My Mind Just Too Full?",
+    description:
+      "A reflection on creative ideas, unfinished work, feeling overwhelmed, and giving yourself the space and energy to take one small step.",
+    image: "/blog/lazyness.png",
+    publishedTime: "2026-09-17",
+  },
   "are-we-educating-students-or-training-them-for-a-job": {
     title: "Are We Educating Students, or Training Them for a Job?",
     description:

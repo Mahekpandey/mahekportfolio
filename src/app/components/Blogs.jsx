@@ -6,6 +6,26 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: "Why Do Developers Love Starting More Than Finishing?",
+    date: "September 17, 2026",
+    readTime: "2 min read",
+    description: "A reflection on the excitement of new projects, the persistence of building software, and the responsibility of finishing what we start.",
+    image: "/blog/cat-tired.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/why-do-developers-love-starting-more-than-finishing"
+  },
+  {
+    title: "Is It Laziness, or Is My Mind Just Too Full?",
+    date: "September 17, 2026",
+    readTime: "1 min read",
+    description: "A reflection on creative ideas, unfinished work, feeling overwhelmed, and giving yourself the space and energy to take one small step.",
+    image: "/blog/lazyness.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/is-it-laziness-or-is-my-mind-just-too-full"
+  },
+  {
     title: "Are We Educating Students, or Training Them for a Job?",
     date: "September 11, 2026",
     readTime: "3 min read",
