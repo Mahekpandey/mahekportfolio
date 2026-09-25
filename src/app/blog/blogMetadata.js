@@ -10,6 +10,20 @@ const siteUrl = configuredSiteUrl.replace(
 );
 
 const blogPosts = {
+  "when-everything-is-a-priority-nothing-is": {
+    title: "When Everything Is a Priority, Nothing Is",
+    description:
+      "A reflection on focus, mental noise, switching costs, and why keeping only three important priorities can help more work actually get finished.",
+    image: "/blog/prio.png",
+    publishedTime: "2026-09-25",
+  },
+  "i-learned-more-from-things-that-broke-than-things-that-worked": {
+    title: "I Learned More From Things That Broke Than Things That Worked",
+    description:
+      "A reflection on debugging, failed deployments, AWS configuration, and why broken things often create the strongest mental models.",
+    image: "/blog/break_learn.png",
+    publishedTime: "2026-09-25",
+  },
   "why-do-developers-love-starting-more-than-finishing": {
     title: "Why Do Developers Love Starting More Than Finishing?",
     description:

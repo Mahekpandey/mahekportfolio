@@ -6,6 +6,26 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: "When Everything Is a Priority, Nothing Is",
+    date: "September 25, 2026",
+    readTime: "1 min read",
+    description: "A reflection on focus, mental noise, switching costs, and why keeping only three important priorities can help more work actually get finished.",
+    image: "/blog/prio.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/when-everything-is-a-priority-nothing-is"
+  },
+  {
+    title: "I Learned More From Things That Broke Than Things That Worked",
+    date: "September 25, 2026",
+    readTime: "2 min read",
+    description: "A reflection on debugging, failed deployments, AWS configuration, and why broken things often create the strongest mental models.",
+    image: "/blog/break_learn.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/i-learned-more-from-things-that-broke-than-things-that-worked"
+  },
+  {
     title: "Why Do Developers Love Starting More Than Finishing?",
     date: "September 17, 2026",
     readTime: "2 min read",
