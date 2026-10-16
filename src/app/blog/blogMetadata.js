@@ -10,6 +10,13 @@ const siteUrl = configuredSiteUrl.replace(
 );
 
 const blogPosts = {
+  "the-engineering-culture-that-makes-you-better": {
+    title: "The Engineering Culture That Makes You Better",
+    description:
+      "A reflection on supportive engineering teams, respectful disagreement, shared learning, and the culture that helps developers grow together.",
+    image: "/blog/the-engineering-culture-that-makes-you-better.png",
+    publishedTime: "2026-10-16",
+  },
   "beyond-winning-sentinel-hackathon-2026": {
     title: "Beyond Winning: My Experience at Sentinel Hackathon 2026",
     description:

@@ -6,6 +6,16 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: "The Engineering Culture That Makes You Better",
+    date: "October 16, 2026",
+    readTime: "4 min read",
+    description: "A reflection on supportive engineering teams, respectful disagreement, shared learning, and the culture that helps developers grow together.",
+    image: "/blog/the-engineering-culture-that-makes-you-better.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/the-engineering-culture-that-makes-you-better"
+  },
+  {
     title: "Beyond Winning: My Experience at Sentinel Hackathon 2026",
     date: "October 16, 2026",
     readTime: "4 min read",
