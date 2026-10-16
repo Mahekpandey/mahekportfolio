@@ -6,6 +6,16 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: "Beyond Winning: My Experience at Sentinel Hackathon 2026",
+    date: "October 16, 2026",
+    readTime: "4 min read",
+    description: "A reflection on building DRISHTI at Sentinel Hackathon 2026, the disappointment of not winning, and the lessons, teamwork, and motivation that mattered more than a trophy.",
+    image: "/blog/beyond-winning-sentinel-hackathon-2026.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/beyond-winning-sentinel-hackathon-2026"
+  },
+  {
     title: "When Everything Is a Priority, Nothing Is",
     date: "September 25, 2026",
     readTime: "1 min read",

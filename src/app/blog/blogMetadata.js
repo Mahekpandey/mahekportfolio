@@ -10,6 +10,13 @@ const siteUrl = configuredSiteUrl.replace(
 );
 
 const blogPosts = {
+  "beyond-winning-sentinel-hackathon-2026": {
+    title: "Beyond Winning: My Experience at Sentinel Hackathon 2026",
+    description:
+      "A reflection on building DRISHTI at Sentinel Hackathon 2026, the disappointment of not winning, and the lessons, teamwork, and motivation that mattered more than a trophy.",
+    image: "/blog/beyond-winning-sentinel-hackathon-2026.png",
+    publishedTime: "2026-10-16",
+  },
   "when-everything-is-a-priority-nothing-is": {
     title: "When Everything Is a Priority, Nothing Is",
     description:
