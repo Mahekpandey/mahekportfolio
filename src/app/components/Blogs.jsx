@@ -6,6 +6,16 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: "I Knew Nothing About Medicine. But I Wanted to Figure It Out.",
+    date: "October 21, 2026",
+    readTime: "3 min read",
+    description: "How building Eklavya Medical taught me to think beyond code—and care about students, trust, product adoption, and creating something that matters.",
+    image: "/blog/eklavya-anatomy-lab-thumbnail_1.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-[#f6f3eb]",
+    link: "/blog/i-knew-nothing-about-medicine-but-i-wanted-to-figure-it-out"
+  },
+  {
     title: "The Engineering Culture That Makes You Better",
     date: "October 16, 2026",
     readTime: "4 min read",

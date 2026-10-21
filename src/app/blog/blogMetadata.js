@@ -10,6 +10,13 @@ const siteUrl = configuredSiteUrl.replace(
 );
 
 const blogPosts = {
+  "i-knew-nothing-about-medicine-but-i-wanted-to-figure-it-out": {
+    title: "I Knew Nothing About Medicine. But I Wanted to Figure It Out.",
+    description:
+      "How building Eklavya Medical taught me to think beyond code—and care about students, trust, product adoption, and creating something that matters.",
+    image: "/blog/eklavya-anatomy-lab-thumbnail_1.png",
+    publishedTime: "2026-10-21",
+  },
   "the-engineering-culture-that-makes-you-better": {
     title: "The Engineering Culture That Makes You Better",
     description:
