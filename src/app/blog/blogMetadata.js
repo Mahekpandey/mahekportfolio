@@ -178,6 +178,22 @@ const blogPosts = {
     image: "/blog/ai-changed-engineering.png",
     publishedTime: "2026-08-13",
   },
+  "ai-race": {
+    title:
+      "The AI Race Is Getting Wild: Google Launches New Models, Anthropic Eyes an IPO, and Meta Bets Billions",
+    description:
+      "A reflection on Google, Anthropic, Meta, and the shift from building impressive AI to creating products people trust, use, and value.",
+    image: "/blog/ai-race.png",
+    publishedTime: "2026-10-29",
+  },
+  "amazon-few": {
+    title:
+      "Amazon Is Launching New Gadgets While Cutting Jobs. What Is Really Happening Inside Big Tech?",
+    description:
+      "A reflection on Amazon's new Alexa devices, job cuts, AI products, and what the changes reveal about the future of big tech.",
+    image: "/blog/amazon-few.png",
+    publishedTime: "2026-10-29",
+  },
 };
 
 export function createBlogMetadata(slug) {

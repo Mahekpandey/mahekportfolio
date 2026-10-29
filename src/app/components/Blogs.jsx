@@ -6,6 +6,26 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: "Amazon Is Launching New Gadgets While Cutting Jobs. What Is Really Happening Inside Big Tech?",
+    date: "October 29, 2026",
+    readTime: "5 min read",
+    description: "A reflection on Amazon's new Alexa devices, job cuts, AI products, and what the changes reveal about the future of big tech.",
+    image: "/blog/amazon-few.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/amazon-few"
+  },
+  {
+    title: "The AI Race Is Getting Wild: Google Launches New Models, Anthropic Eyes an IPO, and Meta Bets Billions",
+    date: "October 29, 2026",
+    readTime: "5 min read",
+    description: "A reflection on Google, Anthropic, Meta, and the shift from building impressive AI to creating products people trust, use, and value.",
+    image: "/blog/ai-race.png",
+    imageFit: "contain",
+    imageFrameClass: "bg-neutral-950 p-2",
+    link: "/blog/ai-race"
+  },
+  {
     title: "I Knew Nothing About Medicine. But I Wanted to Figure It Out.",
     date: "October 21, 2026",
     readTime: "3 min read",
