@@ -10,6 +10,27 @@ const siteUrl = configuredSiteUrl.replace(
 );
 
 const blogPosts = {
+  "marketing-with-claude": {
+    title: "Claude Can Write 100 Ads in a Minute. Someone Still Has to Pick One.",
+    description:
+      "How Claude is changing marketing — from ad copy and weekly reports to whole campaigns — what I learned building AI marketing tools at StoryMirror, and why choosing is becoming the real job.",
+    image: "/blog/marketing-with-claude-og.png",
+    publishedTime: "2026-11-05",
+  },
+  "ai-can-now-smell": {
+    title: "AI Can Now Smell Your Coffee. It Still Can't Miss Home.",
+    description:
+      "Researchers just sent smells over the internet to a wearable. I read past the headline, checked the fine print and the code on GitHub — and ended up thinking about the most human sense we have.",
+    image: "/blog/ai-can-now-smell-og.png",
+    publishedTime: "2026-11-05",
+  },
+  "a-good-teacher-knows-what-to-forget": {
+    title: "A Good Teacher Remembers You. A Great One Knows What to Forget.",
+    description:
+      "This week AI moved deeper into classrooms and into our memories. What building memory for an AI tutor taught me about what to remember — and why forgetting is the most human feature we can build.",
+    image: "/blog/good-teacher-forget-og.png",
+    publishedTime: "2026-11-04",
+  },
   "i-knew-nothing-about-medicine-but-i-wanted-to-figure-it-out": {
     title: "I Knew Nothing About Medicine. But I Wanted to Figure It Out.",
     description:

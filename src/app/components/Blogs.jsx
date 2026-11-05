@@ -1,312 +1,90 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { GeometricBackground } from "./ui/geometric-background";
+import { useMemo, useState } from "react";
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { BLOG_CATEGORIES, visiblePosts } from "../blog/posts";
+import { Reveal } from "./ui/motion";
 
-const blogPosts = [
-  {
-    title: "Amazon Is Launching New Gadgets While Cutting Jobs. What Is Really Happening Inside Big Tech?",
-    date: "October 29, 2026",
-    readTime: "5 min read",
-    description: "A reflection on Amazon's new Alexa devices, job cuts, AI products, and what the changes reveal about the future of big tech.",
-    image: "/blog/amazon-few.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/amazon-few"
-  },
-  {
-    title: "The AI Race Is Getting Wild: Google Launches New Models, Anthropic Eyes an IPO, and Meta Bets Billions",
-    date: "October 29, 2026",
-    readTime: "5 min read",
-    description: "A reflection on Google, Anthropic, Meta, and the shift from building impressive AI to creating products people trust, use, and value.",
-    image: "/blog/ai-race.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/ai-race"
-  },
-  {
-    title: "I Knew Nothing About Medicine. But I Wanted to Figure It Out.",
-    date: "October 21, 2026",
-    readTime: "3 min read",
-    description: "How building Eklavya Medical taught me to think beyond code—and care about students, trust, product adoption, and creating something that matters.",
-    image: "/blog/eklavya-anatomy-lab-thumbnail_1.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-[#f6f3eb]",
-    link: "/blog/i-knew-nothing-about-medicine-but-i-wanted-to-figure-it-out"
-  },
-  {
-    title: "The Engineering Culture That Makes You Better",
-    date: "October 16, 2026",
-    readTime: "4 min read",
-    description: "A reflection on supportive engineering teams, respectful disagreement, shared learning, and the culture that helps developers grow together.",
-    image: "/blog/the-engineering-culture-that-makes-you-better.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/the-engineering-culture-that-makes-you-better"
-  },
-  {
-    title: "Beyond Winning: My Experience at Sentinel Hackathon 2026",
-    date: "October 16, 2026",
-    readTime: "4 min read",
-    description: "A reflection on building DRISHTI at Sentinel Hackathon 2026, the disappointment of not winning, and the lessons, teamwork, and motivation that mattered more than a trophy.",
-    image: "/blog/beyond-winning-sentinel-hackathon-2026.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/beyond-winning-sentinel-hackathon-2026"
-  },
-  {
-    title: "When Everything Is a Priority, Nothing Is",
-    date: "September 25, 2026",
-    readTime: "1 min read",
-    description: "A reflection on focus, mental noise, switching costs, and why keeping only three important priorities can help more work actually get finished.",
-    image: "/blog/prio.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/when-everything-is-a-priority-nothing-is"
-  },
-  {
-    title: "I Learned More From Things That Broke Than Things That Worked",
-    date: "September 25, 2026",
-    readTime: "2 min read",
-    description: "A reflection on debugging, failed deployments, AWS configuration, and why broken things often create the strongest mental models.",
-    image: "/blog/break_learn.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/i-learned-more-from-things-that-broke-than-things-that-worked"
-  },
-  {
-    title: "Why Do Developers Love Starting More Than Finishing?",
-    date: "September 17, 2026",
-    readTime: "2 min read",
-    description: "A reflection on the excitement of new projects, the persistence of building software, and the responsibility of finishing what we start.",
-    image: "/blog/cat-tired.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/why-do-developers-love-starting-more-than-finishing"
-  },
-  {
-    title: "Is It Laziness, or Is My Mind Just Too Full?",
-    date: "September 17, 2026",
-    readTime: "1 min read",
-    description: "A reflection on creative ideas, unfinished work, feeling overwhelmed, and giving yourself the space and energy to take one small step.",
-    image: "/blog/lazyness.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/is-it-laziness-or-is-my-mind-just-too-full"
-  },
-  {
-    title: "Are We Educating Students, or Training Them for a Job?",
-    date: "September 11, 2026",
-    readTime: "3 min read",
-    description: "A reflection on whether education gives students the freedom to explore, question, choose, and think beyond job training.",
-    image: "/blog/are-we-educating-students-or-training-them-for-a-job.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/are-we-educating-students-or-training-them-for-a-job"
-  },
-  {
-    title: "The Day I Lost My Favourite Swimming Goggles",
-    date: "September 11, 2026",
-    readTime: "3 min read",
-    description: "A reflection on saving things for the perfect day, losing time while trying to preserve it, and remembering to let life be lived.",
-    image: "/blog/the-day-i-lost-my-favourite-swimming-goggles.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/the-day-i-lost-my-favourite-swimming-goggles"
-  },
-  {
-    title: "Education Shouldn't Be a Treasure Hunt",
-    date: "September 7, 2026",
-    readTime: "2 min read",
-    description: "A reflection on Bihar Eklavya, textbook discovery, access to education, and why educational technology should remove unnecessary struggle for students.",
-    image: "/blog/education-shouldnt-be-a-treasure-hunt.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/education-shouldnt-be-a-treasure-hunt"
-  },
-  {
-    title: "We Want Everything Faster. But Are We Ready for the Speed?",
-    date: "September 7, 2026",
-    readTime: "2 min read",
-    description: "A reflection on system design, speed, scalability, technical debt, and building software that can survive the pace at which we build it.",
-    image: "/blog/we-want-everything-faster-but-are-we-ready-for-the-speed.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/we-want-everything-faster-but-are-we-ready-for-the-speed"
-  },
-  {
-    title: 'What "Actionable Gamification" Is Teaching Me About Product Design',
-    date: "August 27, 2026",
-    readTime: "3 min read",
-    description: "A reflection on Actionable Gamification, human motivation, learning habits, progress, achievement, and product design for Medical.Eklavya.",
-    image: "/blog/actionable-gami.png",
-    link: "/blog/what-actionable-gamification-is-teaching-me-about-product-design"
-  },
-  {
-    title: "I Didn't Build an AI Tutor. I Built a Learning System.",
-    date: "August 27, 2026",
-    readTime: "4 min read",
-    description: "A reflection on Medical.Eklavya, adaptive learning logic, deterministic engineering, spaced repetition, state machines, and knowing where not to use AI.",
-    image: "/blog/i-didnt-build-an-ai-tutor-i-built-a-learning-system.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/i-didnt-build-an-ai-tutor-i-built-a-learning-system"
-  },
-  {
-    title: "As AI Advances, Being Human Matters More Than Ever",
-    date: "August 21, 2026",
-    readTime: "3 min read",
-    description: "A reflection on AI, human values, empathy, integrity, curiosity, critical thinking, and why being human matters more as technology becomes more capable.",
-    image: "/blog/as-ai-advances-being-human-matters-more-than-ever.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/as-ai-advances-being-human-matters-more-than-ever"
-  },
-  {
-    title: "What I'm Learning: The Octalysis Framework",
-    date: "August 19, 2026",
-    readTime: "3 min read",
-    description: "Notes from Chapter 3 of Actionable Gamification on the 8 Core Drives, motivation, product design, learning, and habits.",
-    image: "/blog/octalysis-framework.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/the-most-powerful-motivation-isnt-money"
-  },
-  {
-    title: "AI Was Supposed to Replace Engineers. Instead, It Changed What Engineering Means.",
-    date: "August 13, 2026",
-    readTime: "3 min read",
-    description: "A reflection on how AI is shifting software engineering from writing code to understanding problems and architecture.",
-    image: "/blog/ai-changed-engineering.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/ai-changed-engineering"
-  },
-  {
-    title: "How Coaching Centres Sell Fear — And Why It Reminds Me of Training an LLM",
-    date: "August 13, 2026",
-    readTime: "5 min read",
-    description: "A reflection on the education system, how coaching classes use comparison and fear, and why adaptive learning should use errors as information, not insults.",
-    image: "/blog/coaching-centres-sell-fear.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/coaching-centres-sell-fear"
-  },
-  {
-    title: "What Gradient Descent Taught Me About Life",
-    date: "August 7, 2026",
-    readTime: "8 min read",
-    description: "A personal reflection on gradient descent, feedback, learning rates, failure, and how small corrections shape growth over time.",
-    image: "/blog/what-gradient-descent-taught-me-about-life.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/what-gradient-descent-taught-me-about-life"
-  },
-  {
-    title: "You Can Plan Your Next Year. Life Might Have Other Plans.",
-    date: "August 7, 2026",
-    readTime: "6 min read",
-    description: "A reflection on engineering, first internships, changing plans, and why progress rarely happens exactly the way we imagined.",
-    image: "/blog/you-can-plan-your-next-year.png",
-    imageFit: "contain",
-    imageFrameClass: "bg-neutral-950 p-2",
-    link: "/blog/you-can-plan-your-next-year"
-  },
-  {
-    title: "Hi, I'm Mahek Pandey",
-    date: "July 30, 2026",
-    readTime: "4 min read",
-    description: "A personal introduction to what I am building at Eklavya, how product thinking changed my engineering mindset, and what this blog will be about.",
-    image: "/blog/mahek-pandey-intro.png",
-    imageFit: "contain",
-    link: "/blog/hi-im-mahek-pandey"
-  },
-  {
-    title: "Most AI Agent Problems Aren't AI Problems",
-    date: "July 30, 2026",
-    readTime: "5 min read",
-    description: "Why reliable AI agents are built in the harness around the model: memory, retrieval, tools, retries, stop conditions, and workflows.",
-    image: "/blog/ai-agent-harness.png",
-    imageFit: "contain",
-    link: "/blog/ai-agent-problems"
-  },
-  {
-    title: "The Rise of AI Agents: Revolutionizing Work in 2025",
-    date: "January 15, 2025",
-    readTime: "12 min read",
-    description: "Explore how AI agents are transforming the workplace, enhancing human capabilities, and revolutionizing industries across the board.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop",
-    link: "/blog/ai-agents-2025"
-  },
-  {
-    title: "Tech Startups: Navigating the New Frontier",
-    date: "February 1, 2025",
-    readTime: "10 min read",
-    description: "Discover how quantum computing, sustainable tech, and evolving funding models are reshaping the startup ecosystem in 2025.",
-    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2070&auto=format&fit=crop",
-    link: "/blog/tech-startups-2025"
-  },
-  {
-    title: "The Future of Brain-Computer Interfaces",
-    date: "February 20, 2025",
-    readTime: "15 min read",
-    description: "Delve into the revolutionary advances in BCI technology and their impact on medicine, education, and human augmentation.",
-    image: "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=80&w=2070&auto=format&fit=crop",
-    link: "/blog/brain-computer-interfaces"
-  }
-];
+const PAGE = 8;
 
 export const Blogs = () => {
-  return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-black py-20">
-      <GeometricBackground />
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">Latest Blog Posts</h2>
-          <p className="text-xl text-neutral-400">Exploring the frontiers of technology and innovation</p>
-        </div>
+  const [category, setCategory] = useState("All");
+  const [count, setCount] = useState(PAGE);
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch">
-          {blogPosts.map((post, index) => (
-            <motion.div
-              key={post.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="group h-full"
-            >
-              <Link href={post.link} className="block h-full">
-                <div className="h-full bg-neutral-900/50 rounded-2xl overflow-hidden border border-neutral-800 backdrop-blur-sm hover:border-neutral-700 transition-colors flex flex-col">
-                  <div className={`h-60 overflow-hidden flex items-center justify-center ${post.imageFit === "contain" ? post.imageFrameClass || "bg-white p-3" : ""}`}>
-                    <img
-                      src={post.image}
-                      alt={post.title}
-                      className={`w-full h-full transform group-hover:scale-105 transition-transform duration-300 ${
-                        post.imageFit === "contain" ? "object-contain object-center" : "object-cover object-center"
-                      }`}
-                    />
-                  </div>
-                  <div className="p-6 flex flex-1 flex-col">
-                    <div className="flex items-center gap-2 text-sm text-neutral-400 mb-4">
-                      <span>{post.date}</span>
-                      <span>•</span>
-                      <span>{post.readTime}</span>
-                    </div>
-                    <h3 className="text-xl font-semibold text-white mb-2 min-h-[3.5rem] line-clamp-2 group-hover:text-blue-400 transition-colors">
-                      {post.title}
-                    </h3>
-                    <p className="text-neutral-400 line-clamp-2">
-                      {post.description}
-                    </p>
-                  </div>
-                </div>
-              </Link>
-            </motion.div>
-          ))}
-        </div>
+  const latest = visiblePosts.slice(0, 2);
+  const rest = useMemo(() => visiblePosts.slice(2), []);
+  const filtered = category === "All" ? rest : rest.filter((p) => p.category === category);
+  const shown = filtered.slice(0, count);
+
+  return (
+    <div className="mx-auto max-w-6xl px-5 py-28 sm:px-8 md:py-36">
+      <Reveal>
+        <p className="text-xs uppercase tracking-[0.35em] text-dim">Writing</p>
+        <h2 className="font-display mt-4 text-[clamp(2.6rem,6vw,4.75rem)] text-[#f6f2ea]">Notes from the build</h2>
+      </Reveal>
+
+      {/* Latest two, with covers */}
+      <div className="mt-16 grid gap-12 md:grid-cols-2 md:gap-10">
+        {latest.map((post, i) => (
+          <Reveal key={post.link} delay={i * 0.08}>
+            <Link href={post.link} className="group block">
+              <div className="overflow-hidden rounded-2xl bg-[#171717]">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="aspect-[3/2] w-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-[1.03]"
+                />
+              </div>
+              <p className="mt-5 text-sm font-light text-dim">
+                {post.date} <span className="text-[#bfa273]">·</span> {post.readTime}
+              </p>
+              <h3 className="mt-2 text-2xl font-normal leading-snug text-[#f6f2ea] transition group-hover:text-[#d1c0a3]">{post.title}</h3>
+              <p className="mt-3 line-clamp-2 font-light leading-relaxed text-muted">{post.description}</p>
+            </Link>
+          </Reveal>
+        ))}
       </div>
+
+      {/* Everything else, as a quiet list */}
+      <div className="mt-24 flex flex-wrap gap-x-6 gap-y-2 text-sm" role="tablist" aria-label="Filter posts by topic">
+        {BLOG_CATEGORIES.map((c) => (
+          <button
+            key={c}
+            role="tab"
+            aria-selected={category === c}
+            onClick={() => {
+              setCategory(c);
+              setCount(PAGE);
+            }}
+            className={`pb-1 transition ${category === c ? "border-b border-[#bfa273] text-[#f6f2ea]" : "font-light text-dim hover:text-muted"}`}
+          >
+            {c}
+          </button>
+        ))}
+      </div>
+
+      <ul className="mt-6 border-b border-[var(--line)]">
+        {shown.map((post) => (
+          <li key={post.link}>
+            <Link
+              href={post.link}
+              className="group grid gap-1 border-t border-[var(--line)] py-6 md:grid-cols-[150px_1fr_110px_auto] md:items-baseline md:gap-8"
+            >
+              <span className="text-sm font-light text-dim">{post.date}</span>
+              <span className="text-lg font-normal leading-snug text-[#f6f2ea] transition group-hover:text-[#d1c0a3]">{post.title}</span>
+              <span className="text-xs uppercase tracking-widest text-dim">{post.category}</span>
+              <ArrowUpRight className="hidden h-4 w-4 text-dim transition group-hover:text-[#bfa273] md:block" />
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      {count < filtered.length && (
+        <button onClick={() => setCount((c) => c + PAGE)} className="mt-8 text-sm text-[#f6f2ea] transition hover:text-[#d1c0a3]">
+          Show more <span className="font-light text-dim">({filtered.length - count})</span>
+        </button>
+      )}
     </div>
   );
-}; 
+};

@@ -1,62 +1,29 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Github, Linkedin, Mail } from "lucide-react";
-import { GeometricBackground } from "./ui/geometric-background";
+import Link from "next/link";
+import { scrollToId } from "./ui/SmoothScroll";
 
 export const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
+  const year = new Date().getFullYear();
   return (
-    <footer className="relative w-full overflow-hidden bg-black">
-      <GeometricBackground className="opacity-40" />
-      <div className="relative z-10 mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0">
-          <div>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-neutral-400"
-            >
-              © {currentYear}  Pandey. All rights reserved.
-            </motion.p>
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="flex space-x-6"
-          >
-            <a
-              href="mailto:mahekpandey.work@gmail.com"
-              className="text-neutral-400 hover:text-white transition-colors"
-              aria-label="Email"
-            >
-              <Mail className="h-5 w-5" />
-            </a>
-            <a
-              href="https://github.com/Mahekpandey"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-neutral-400 hover:text-white transition-colors"
-              aria-label="GitHub"
-            >
-              <Github className="h-5 w-5" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/mahek-pandey-39243b258/\"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-neutral-400 hover:text-white transition-colors"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="h-5 w-5" />
-            </a>
-          </motion.div>
+    <footer className="border-t border-[var(--line)]">
+      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-5 py-10 text-sm font-light text-dim sm:flex-row sm:items-center sm:justify-between sm:px-8">
+        <p>© {year} Mahek Pandey · AI Engineer, Mumbai</p>
+        <div className="flex gap-6">
+          <Link href="/papers" className="transition hover:text-[#f6f2ea]">
+            Papers
+          </Link>
+          <a href="https://github.com/Mahekpandey" target="_blank" rel="noopener noreferrer" className="transition hover:text-[#f6f2ea]">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/mahek-pandey-39243b258/" target="_blank" rel="noopener noreferrer" className="transition hover:text-[#f6f2ea]">
+            LinkedIn
+          </a>
+          <button onClick={() => scrollToId("home")} className="transition hover:text-[#f6f2ea]">
+            Back to top ↑
+          </button>
         </div>
       </div>
     </footer>
   );
-}; 
+};
