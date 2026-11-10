@@ -10,6 +10,13 @@ const siteUrl = configuredSiteUrl.replace(
 );
 
 const blogPosts = {
+  "food-app-frontier-ai": {
+    title: "China's Zomato Just Built a Frontier AI. Then It Gave It Away for Free.",
+    description:
+      "Meituan — the app that delivers China's dinner — just open-sourced a 1.6-trillion-parameter model. I priced it against Claude and GPT, checked the fine print, and worked out what China's everyday apps building AI means for engineers like us.",
+    image: "/blog/food-app-frontier-ai-og.png",
+    publishedTime: "2026-11-10",
+  },
   "marketing-with-claude": {
     title: "Claude Can Write 100 Ads in a Minute. Someone Still Has to Pick One.",
     description:

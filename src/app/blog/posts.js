@@ -6,6 +6,16 @@ export const BLOG_CATEGORIES = ["All", "AI", "Engineering", "Product", "Educatio
 
 export const blogPosts = [
   {
+    title: "China's Zomato Just Built a Frontier AI. Then It Gave It Away for Free.",
+    date: "November 10, 2026",
+    readTime: "10 min read",
+    category: "AI",
+    description:
+      "Meituan — the app that delivers China's dinner — just open-sourced a 1.6-trillion-parameter model. I priced it against Claude and GPT, checked the fine print, and worked out what China's everyday apps building AI means for engineers like us.",
+    image: "/blog/food-app-frontier-ai.png",
+    link: "/blog/food-app-frontier-ai",
+  },
+  {
     title: "Claude Can Write 100 Ads in a Minute. Someone Still Has to Pick One.",
     date: "November 5, 2026",
     readTime: "7 min read",
