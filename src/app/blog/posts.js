@@ -6,6 +6,16 @@ export const BLOG_CATEGORIES = ["All", "AI", "Engineering", "Product", "Educatio
 
 export const blogPosts = [
   {
+    title: "The AI World Has a Single Point of Failure. This Week, It Wobbled.",
+    date: "November 13, 2026",
+    readTime: "11 min read",
+    category: "AI",
+    description:
+      "Nvidia's CEO resigned, a spy story hit the chip supply chain, and Trump and Xi are about to meet. An engineer's read on export controls, chips that prove where they are, China's own road — and what India and builders should do next.",
+    image: "/blog/ai-single-point-of-failure.png",
+    link: "/blog/ai-single-point-of-failure",
+  },
+  {
     title: "China's Zomato Just Built a Frontier AI. Then It Gave It Away for Free.",
     date: "November 10, 2026",
     readTime: "10 min read",

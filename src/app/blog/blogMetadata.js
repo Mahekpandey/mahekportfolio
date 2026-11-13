@@ -10,6 +10,13 @@ const siteUrl = configuredSiteUrl.replace(
 );
 
 const blogPosts = {
+  "ai-single-point-of-failure": {
+    title: "The AI World Has a Single Point of Failure. This Week, It Wobbled.",
+    description:
+      "Nvidia's CEO resigned, a spy story hit the chip supply chain, and Trump and Xi are about to meet. An engineer's read on export controls, chips that prove where they are, China's own road — and what India and builders should do next.",
+    image: "/blog/ai-single-point-of-failure-og.png",
+    publishedTime: "2026-11-13",
+  },
   "food-app-frontier-ai": {
     title: "China's Zomato Just Built a Frontier AI. Then It Gave It Away for Free.",
     description:
